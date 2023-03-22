@@ -18,7 +18,6 @@ h2 {
 }
 
 button {
-    border: none;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -26,10 +25,22 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
+    background: darkred;
+}
+
+button:hover {
+    border-color: aquamarine;
+    background: white;
+    color: darkred;
+}
+
+button:active {
+    background-color: aqua;
+    color: chocolate;
 }
 
 #increment-btn {
-    background: darkred;
+    
 }
 
 #save-btn {

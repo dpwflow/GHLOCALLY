@@ -1,13 +1,5 @@
-# GHLOCALLY
-yes2
+# JavaScript Training Sessions
 
-## Subheader
-
-header
-
-## another section
-
-1. open index.html in your browser.
-2. idk
-3. another change just for commit
-4. опрайх го е бат маняка
+Hello there!
+I'm a beginner JS developer and here I'm only practicing basic programming with JavaScript!
+Wish me good luck!

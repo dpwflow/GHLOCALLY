@@ -33,7 +33,45 @@ function decrement() {
 }
 
 
+// pravish promenliva (obekt), koito polzva metod, koito metod se otnasq do HTML documenta vzima mu elementa po ID i go suhranqwa, weche s toq obekt (promenlivata) mojesh da go manipulirash vuv funkciq ili drugo
+let dogsCounter = document.getElementById("dogs-counter");
+
+// vij koi element si vzel
+console.log(dogsCounter);
+
+// nashiq counter s purvonachalna stoinost 0
+let incDogCount = 0;
+
+// funkciqta, koqto prilagame na butona increment, kato go natisnem dobavq 1 kum broikata kucheta
+function incDoggo() {
+    incDogCount += 1;
+    console.log("button was clicked, the dog count now is: " + incDogCount);
+    dogsCounter.innerText = incDogCount;
+}
+
+
+function decDoggo() {
+    incDogCount -= 1;
+    console.log("button was clicked, the dog count now is: " + incDogCount);
+    dogsCounter.innerText = incDogCount;
+}
+
+// 
+
+
+// 1. Create a function, save(), which logs out the count when it's called
+
+function save() {
+    console.log(count);
+}
 
 
 
-// document.getElementById("increment-btn").onclick(document.getElementById("count-el").innerTex = count += 1);
+
+
+
+
+
+
+
+

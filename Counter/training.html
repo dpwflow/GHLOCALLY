@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The best way to loop through an array is using a standard for loop:</p>
+
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>"; // tuk nqma nujda ot console.log samo deklarirash promenlivata, t.e. to v elementa nqma da q sloji, zashtoto ti ne si izvikal funkciq oshte, za da promenish DOM elementa.
+    console.log("\nconsole log: " + text);
+
+// tuka she gi izvartish dokolkoto e broikata na masiva
+for (let i = 0; i < fLen; i++) {
+  // tuka to pravi slednoto text=<ul>, to kato varti cikula shte mu dobavq vseki put po edin "fruits" + </li> kum predhotdnoto koeto e bilo t.e: <ul><li>Banana</li><li>Orange</li> i tn, dokato nakraq sled cikala shte mu sloji kum vsichko tova i edin </ul> zatvarqsht tag
+  text += "<li>" + fruits[i] + "</li>"; 
+  console.log("\nconsole log: " + text);
+}
+
+console.log("\nconsole log: " + text);
+
+text += "</ul>";
+console.log("\nconsole log: " + text);
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+<!-- 
+console log: <ul>
+console log: <ul><li>Banana</li>
+console log: <ul><li>Banana</li><li>Orange</li>
+console log: <ul><li>Banana</li><li>Orange</li><li>Apple</li>
+console log: <ul><li>Banana</li><li>Orange</li><li>Apple</li><li>Mango</li>
+console log: <ul><li>Banana</li><li>Orange</li><li>Apple</li><li>Mango</li>
+console log: <ul><li>Banana</li><li>Orange</li><li>Apple</li><li>Mango</li></ul> -->
+
+
+
+<!--
+    nai vajniq urok e, che dokato ne si izvikal funkciq tiq procesi ne startirat, kakto i che kato purvonachalno inicializirash promenlivata ti ne si q izvikal nikude i tq vse oshte ne e vidima, posle ako si q slojil vuv cikula / funkciqta tam shte se izvika i pokaje.
+
+--> 
+
+</body>
+</html>

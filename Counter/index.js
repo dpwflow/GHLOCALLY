@@ -56,5 +56,22 @@ function decDoggo() {
     dogsCounter.innerText = incDogCount;
 }
 
+// 
 
-// document.getElementById("increment-btn").onclick(document.getElementById("count-el").innerTex = count += 1);
+
+// 1. Create a function, save(), which logs out the count when it's called
+
+function save() {
+    console.log(count);
+}
+
+
+
+
+
+
+
+
+
+
+

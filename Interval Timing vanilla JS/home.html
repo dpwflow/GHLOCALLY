@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interval Training</title>
+        <link rel="stylesheet" type="text/css" href="home.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="headers">
+                <div class="left">
+                    <!-- cancel option da e vidimo samo v edit mode -->
+                    <button>Cancel (X)</button>
+                  </div>
+                
+                  <div class="center-edit-button-header">
+                    <!-- Edit button -->
+                    <button>Set up</button>
+                  </div>
+                
+                  <div class="right">
+                    <button>Save</button>
+                  </div>
+            </header>
+
+            <main>
+                <!-- PREPARE -->
+                <div class="timer">
+                    <p class="preset-header">PREPARE</p>
+                    <div class="timer-controls">
+                    <!-- <button id="prepare-increment-minutes">+</button> -->
+                    <button id="prepare-increment-seconds">+</button>
+
+                    <div class="timer-display">
+                        <span id="minutes">00</span>:<span id="seconds">00</span>
+                    </div>
+
+                    <!-- <button id="prepare-decrement-minutes">-</button> -->
+                    <button id="prepare-decrement-seconds">-</button>
+                    </div>
+                </div>
+
+                <!-- SETS -->
+                <div class="timer">
+                    <p class="preset-header">SETS</p>
+                    <div class="timer-controls">
+                    <button id="prepare-increment-seconds" onclick="incrementSeconds()">+</button>
+
+                    <div class="timer-display">
+                        <span id="minutes">00</span>:<span id="seconds">00</span>
+                    </div>
+                    
+                    <button id="prepare-decrement-seconds">-</button>
+                    </div>
+                </div>
+
+
+                <!-- WORK -->
+                <div class="timer">
+                    <p class="preset-header">WORK</p>
+                    <div class="timer-controls">
+                        <button id="prepare-increment-seconds">+</button>
+
+                        <div class="timer-display">
+                        <span id="minutes">00</span>:<span id="seconds">00</span>
+                        </div>
+                        
+                        <button id="prepare-decrement-seconds">-</button>
+                    </div>
+                </div>
+
+
+                <!-- REST -->
+                <div class="timer">
+                    <p class="preset-header">REST</p>
+                    <div class="timer-controls">
+                    <button id="prepare-increment-seconds">+</button>
+
+                    <div class="timer-display">
+                        <span id="minutes">00</span>:<span id="seconds">00</span>
+                    </div>
+
+                    <button id="prepare-decrement-seconds">-</button>
+                    </div>
+                </div>
+
+
+                <!-- COOLDOWN -->
+                <div class="timer bottom-element">
+                    <p class="preset-header">COOLDOWN</p>
+                    <div class="timer-controls">
+                    <button id="prepare-increment-seconds" onclick="incrementSeconds()">+</button>
+
+                    <div class="timer-display">
+                        <span id="minutes">00</span>:<span id="seconds">00</span>
+                    </div>
+                    
+                    <button id="prepare-decrement-seconds">-</button>
+                    </div>
+                </div>
+
+            </main>
+
+
+            <footer class="footers">
+                <p class="total">TOTAL: (time)</p>
+            </footer>
+
+
+            <script src="home.js"></script>
+        </div>
+    </body>
+</html>
